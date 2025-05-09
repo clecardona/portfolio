@@ -14,6 +14,8 @@
   # Specific rules for nested routes
   RewriteRule ^work/fletnix$ /work/fletnix.html [L]
   RewriteRule ^work/fletnix/$ /work/fletnix.html [L]
+  RewriteRule ^work/lumi-weather$ /work/lumi-weather.html [L]
+  RewriteRule ^work/lumi-weather/$ /work/lumi-weather.html [L]
 
   # If the requested resource exists as a file, serve it directly
   RewriteCond %{REQUEST_FILENAME} -f
