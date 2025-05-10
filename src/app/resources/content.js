@@ -61,7 +61,7 @@ const baseUrl = "https://clecardona.eu/assets/tech/"
 const about = {
   path: "/about",
   label: "About",
-  title: `About – ${person.name}`,
+  title: `About me`,
   description: `Meet ${person.name}, ${person.role} from ${person.location}`,
   tableOfContent: {
     display: true,
