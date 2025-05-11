@@ -12,6 +12,8 @@
   RewriteRule ^work/$ /work.html [L]
 
   # Specific rules for nested routes
+  RewriteRule ^work/cv-maker$ /work/cv-maker.html [L]
+  RewriteRule ^work/cv-maker/$ /work/cv-maker.html [L]
   RewriteRule ^work/fletnix$ /work/fletnix.html [L]
   RewriteRule ^work/fletnix/$ /work/fletnix.html [L]
   RewriteRule ^work/lumi-weather$ /work/lumi-weather.html [L]
