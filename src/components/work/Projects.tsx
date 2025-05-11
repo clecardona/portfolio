@@ -36,6 +36,8 @@ export function Projects({ range }: ProjectsProps) {
           }
           link={post.metadata.link || ""}
           github={post.metadata.github || ""}
+          mobile={post.metadata.mobile === "yes"}
+          desktop={post.metadata.desktop === "yes"}
         />
       ))}
     </Column>

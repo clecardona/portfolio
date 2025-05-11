@@ -1,42 +1,41 @@
-import { IconType } from "react-icons";
-
+import { IconType } from "react-icons"
+import { FaDiscord, FaGithub, FaLinkedin, FaX } from "react-icons/fa6"
 import {
-  HiChevronUp,
-  HiChevronDown,
-  HiChevronRight,
-  HiChevronLeft,
+  HiArrowRight,
+  HiArrowTopRightOnSquare,
   HiArrowUpRight,
-  HiOutlineArrowPath,
+  HiCalendarDays,
   HiCheck,
-  HiMiniQuestionMarkCircle,
-  HiMiniXMark,
-  HiOutlineLink,
+  HiCheckCircle,
+  HiChevronDown,
+  HiChevronLeft,
+  HiChevronRight,
+  HiChevronUp,
+  HiClipboard,
+  HiEnvelope,
+  HiExclamationCircle,
   HiExclamationTriangle,
   HiInformationCircle,
-  HiExclamationCircle,
-  HiCheckCircle,
+  HiMiniComputerDesktop,
+  HiMiniDevicePhoneMobile,
   HiMiniGlobeAsiaAustralia,
-  HiArrowTopRightOnSquare,
-  HiEnvelope,
-  HiCalendarDays,
-  HiClipboard,
-  HiArrowRight,
+  HiMiniQuestionMarkCircle,
+  HiMiniXMark,
+  HiMoon,
+  HiOutlineArrowPath,
+  HiOutlineDocument,
   HiOutlineEye,
   HiOutlineEyeSlash,
-  HiMoon,
+  HiOutlineLink,
   HiSun,
-  HiOutlineDocument,
-} from "react-icons/hi2";
-
+} from "react-icons/hi2"
 import {
-  PiHouseDuotone,
-  PiUserCircleDuotone,
-  PiGridFourDuotone,
   PiBookBookmarkDuotone,
+  PiGridFourDuotone,
+  PiHouseDuotone,
   PiImageDuotone,
-} from "react-icons/pi";
-
-import { FaDiscord, FaGithub, FaLinkedin, FaX } from "react-icons/fa6";
+  PiUserCircleDuotone,
+} from "react-icons/pi"
 
 export const iconLibrary: Record<string, IconType> = {
   chevronUp: HiChevronUp,
@@ -58,6 +57,8 @@ export const iconLibrary: Record<string, IconType> = {
   grid: PiGridFourDuotone,
   book: PiBookBookmarkDuotone,
   close: HiMiniXMark,
+  desktop: HiMiniComputerDesktop,
+  mobile: HiMiniDevicePhoneMobile,
   openLink: HiOutlineLink,
   calendar: HiCalendarDays,
   home: PiHouseDuotone,
@@ -73,7 +74,7 @@ export const iconLibrary: Record<string, IconType> = {
   moon: HiMoon,
   sun: HiSun,
   document: HiOutlineDocument,
-};
+}
 
-export type IconLibrary = typeof iconLibrary;
-export type IconName = keyof IconLibrary;
+export type IconLibrary = typeof iconLibrary
+export type IconName = keyof IconLibrary

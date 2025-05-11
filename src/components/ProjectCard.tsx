@@ -6,6 +6,7 @@ import {
   Column,
   Flex,
   Heading,
+  Icon,
   SmartLink,
   Text,
 } from "@/once-ui/components"
@@ -20,6 +21,8 @@ interface ProjectCardProps {
   avatars: { src: string }[]
   link: string
   github: string
+  mobile: boolean
+  desktop: boolean
 }
 
 export const ProjectCard: React.FC<ProjectCardProps> = ({
@@ -31,6 +34,8 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
   avatars,
   link,
   github,
+  mobile,
+  desktop,
 }) => {
   return (
     <Column fillWidth gap='m'>
@@ -101,6 +106,10 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
             </Flex>
           </Column>
         )}
+        <Flex gap='12'>
+          {desktop && <Icon name='desktop' onBackground='neutral-weak' />}
+          {mobile && <Icon name='mobile' onBackground='neutral-weak' />}
+        </Flex>
       </Flex>
     </Column>
   )

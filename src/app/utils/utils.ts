@@ -11,6 +11,8 @@ type Team = {
 }
 
 type Metadata = {
+  mobile: string
+  desktop: string
   github: string
   title: string
   publishedAt: string
@@ -48,6 +50,8 @@ function readMDXFile(filePath: string) {
     team: data.team || [],
     link: data.link || "",
     github: data.github || "",
+    mobile: data.mobile || "",
+    desktop: data.desktop || "",
   }
 
   return { metadata, content }
@@ -57,6 +61,7 @@ function getMDXData(dir: string) {
   const mdxFiles = getMDXFiles(dir)
   return mdxFiles.map((file) => {
     const { metadata, content } = readMDXFile(path.join(dir, file))
+    console.log("metadata", metadata)
     const slug = path.basename(file, path.extname(file))
 
     return {
